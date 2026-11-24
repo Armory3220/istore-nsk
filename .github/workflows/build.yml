@@ -55,5 +55,5 @@ jobs:
             VITE_SUPABASE_URL=${{ secrets.VITE_SUPABASE_URL }}
             VITE_SUPABASE_ANON_KEY=${{ secrets.VITE_SUPABASE_ANON_KEY }}
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/armory3220/istore-nsk:latest
+            ghcr.io/armory3220/istore-nsk:${{ github.sha }}
