@@ -1,3 +1,4 @@
+import { SeoHead } from '../components/SeoHead';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ArrowLeft } from 'lucide-react';
@@ -126,6 +127,7 @@ export const CheckoutPage = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10 pb-20">
+      <SeoHead title="Оформление заказа | i:Store" noIndex={true} />
       <Link
         to="/cart"
         className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white mb-6 transition-colors"

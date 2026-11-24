@@ -1,3 +1,4 @@
+import { SeoHead } from '../components/SeoHead';
 import { useEffect, useState } from 'react';
 import { Search } from 'lucide-react';
 import { supabase } from '../lib/supabase';
@@ -43,8 +44,12 @@ export const CatalogPage = () => {
     return matchesCategory && matchesSearch;
   });
 
-  return (
+    return (
     <div className="max-w-6xl mx-auto px-4 py-10 pb-20">
+      <SeoHead
+        title="Каталог техники Apple | i:Store Новосибирск"
+        description="Полный каталог устройств Apple в наличии в Новосибирске: удобный поиск и фильтрация по категориям iPhone, Watch и AirPods."
+      />
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold text-white">Каталог техники</h1>

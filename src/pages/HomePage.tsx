@@ -1,3 +1,4 @@
+import { SeoHead } from '../components/SeoHead';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Truck, Sparkles, ArrowRight } from 'lucide-react';
@@ -29,8 +30,12 @@ export const HomePage = () => {
     fetchFeatured();
   }, []);
 
-  return (
+    return (
     <div className="pb-20">
+      <SeoHead
+        title="i:Store — Магазин техники Apple в Новосибирске"
+        description="Оригинальная техника Apple в Новосибирске: актуальные модели iPhone, Apple Watch и AirPods с гарантией и бесплатной доставкой."
+      />
       {/* 1. Главный баннер */}
       <section className="relative overflow-hidden border-b border-zinc-800/80 bg-gradient-to-b from-zinc-900 to-[#18181b]">
         <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-orange-500/15 blur-[120px] rounded-full pointer-events-none" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://istore.localhost</loc>
+  </url>
+  <url>
+    <loc>https://istore.localhostcatalog</loc>
+  </url>
+  <url>
+    <loc>https://istore.localhostproduct/iphone-17-pro</loc>
+  </url>
+  <url>
+    <loc>https://istore.localhostproduct/airpods-pro-3</loc>
+  </url>
+  <url>
+    <loc>https://istore.localhostproduct/watch-ultra-3</loc>
+  </url>
+</urlset>

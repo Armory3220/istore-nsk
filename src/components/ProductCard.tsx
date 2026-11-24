@@ -41,9 +41,9 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             {product.category.name}
           </span>
         )}
-        <h3 className="text-lg font-semibold text-white mt-1 group-hover:text-orange-400 transition-colors">
+        <h2 className="text-lg font-semibold text-white mt-1 group-hover:text-orange-400 transition-colors">
           {product.name}
-        </h3>
+        </h2>
 
         <div className="mt-4 flex items-center justify-between">
           <span className="text-base font-bold text-white">

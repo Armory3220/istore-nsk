@@ -1,3 +1,4 @@
+import { SeoHead } from '../components/SeoHead';
 import { Link, useNavigate } from 'react-router-dom';
 import { Trash2, Plus, Minus, ShoppingBag, ArrowRight } from 'lucide-react';
 import { useCartStore } from '../store/cartStore';
@@ -30,6 +31,7 @@ export const CartPage = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10 pb-20">
+      <SeoHead title="Корзина | i:Store" noIndex={true} />
       <h1 className="text-3xl font-bold text-white mb-8">Корзина</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">

@@ -1,3 +1,4 @@
+import { SeoHead } from '../components/SeoHead';
 import { useEffect, useState } from 'react';
 import { Package, User as UserIcon, LogOut, Check, Save } from 'lucide-react';
 import type { User } from '@supabase/supabase-js';
@@ -125,9 +126,10 @@ export const AccountPage = () => {
       </div>
     );
   }
-  if (!user) {
+    if (!user) {
     return (
       <div className="max-w-md mx-auto px-4 py-16">
+        <SeoHead title="Вход и регистрация | i:Store" noIndex={true} />
         <div className="bg-[#222226] border border-zinc-800/80 rounded-3xl p-8">
           <div className="flex bg-[#18181b] p-1 rounded-xl mb-6 border border-zinc-800">
             <button
@@ -215,8 +217,9 @@ export const AccountPage = () => {
       </div>
     );
   }
-  return (
+    return (
     <div className="max-w-5xl mx-auto px-4 py-10 pb-20">
+      <SeoHead title="Личный кабинет | i:Store" noIndex={true} />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold text-white">Личный кабинет</h1>
